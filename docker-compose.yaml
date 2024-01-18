@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  vcs:
+    image: bankbuddy.azurecr.io/vcs:latest
+    container_name: vcs
+    environent:
+    - GIT_HTTP_PROXY_URL=https://github.com
+    network_mode: host
+
